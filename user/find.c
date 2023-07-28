@@ -2,6 +2,7 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 #include "kernel/fs.h"
+
 char*
 fmtname(char *path)
 {
@@ -33,7 +34,6 @@ find(char * path, char * nm){
         close(fd);
         return;
     }
-
     if(strcmp(fmtname(path), nm) == 0){
         printf("%s\n", path);
     }
