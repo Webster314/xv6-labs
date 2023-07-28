@@ -151,7 +151,7 @@ UPROGS=\
 	$U/_zombie\
 	$U/_sleep\
 	$U/_uptime\
-
+	$U/_find\
 
 ifeq ($(LAB),syscall)
 UPROGS += \
